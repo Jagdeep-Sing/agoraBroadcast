@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useEffect, useMemo } from 'react'
 import { useGlobalState, useGlobalMutation } from '../utils/container'
 import RTCClient from '../rtc-client'

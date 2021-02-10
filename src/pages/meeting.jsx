@@ -84,6 +84,7 @@ const MeetingPage = () => {
     return () => {
       localClient && localClient.leave(() => mutationCtx.clearAllStream())
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [localClient])
 
   const history = routerCtx.history
@@ -191,6 +192,7 @@ const MeetingPage = () => {
     mutationCtx.setCurrentStream(stream)
   }
 
+// eslint-disable-next-line
   const otherStreams = useMemo(() => {
     return stateCtx.streams.filter(
       (it) => it.getId() !== currentStream.getId()

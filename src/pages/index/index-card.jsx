@@ -139,6 +139,7 @@ export default function IndexCard () {
   }
 
   const handleChange = (evt) => {
+    // eslint-disable-next-line
     const { value, checked } = evt
     console.log('value', evt)
     mutationCtx.updateConfig({
@@ -157,10 +158,10 @@ export default function IndexCard () {
     >
       <Link to="/setting" className="setting-btn" />
       <span className="version">Web SDK Version: {AgoraRTC.VERSION}</span>
-      <a
+      {/* <a
         href="https://github.com/AgoraIO/Basic-Video-Broadcasting/tree/master/OpenLive-Web"
         className="github"
-      ></a>
+      ></a> */}
       <div className="role-container">
         <CustomRadio
           className={classes.radio}
